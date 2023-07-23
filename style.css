@@ -1,0 +1,25 @@
+
+.data_input{
+    display: flex;
+    justify-content: start;
+    background-color: blueviolet;
+    
+}
+.all_content{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.for_btn{
+    background-color: black;
+    display: flex;
+    justify-content: end;
+}
+input, 
+label
+{
+    display: block;
+}
+.day-month-year{
+    display: inline-block;
+}
+
