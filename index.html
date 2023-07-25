@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="/style.css">
   <title>Age calculator app</title>
@@ -20,30 +22,34 @@
 
   <div class="data_input">
     <div class="day-month-year">
-      <label for="day-month-year"> Day</label>
-      <input type="number" placeholder="DD" id="day" name="day" min="0">
+      <label for="day-month-year"> DAY</label>
+      <input type="number-input" placeholder="DD" id="day" name="day" min="0">
     </div>
     <div class="day-month-year">
-      <label for="month">Month</label>
-      <input type="number" placeholder="MM" id="month" name="month" min="0">
+      <label for="month">MONTH</label>
+      <input type="number-input" placeholder="MM" id="month" name="month" min="0">
     </div>
     <div class="day-month-year">
-      <label for="year">Year</label>   
-      <input type="number" placeholder="YYYY" id="year" name="year" min="0">
+      <label for="year">YEAR</label>
+      <input type="number-input" placeholder="YYYY" id="year" name="year" min="0">
     </div>
   </div>
 
   <div class="for_btn">
-    <button>button</button>
+    <button>
+      <img src="/assets/images/icon-arrow.svg" alt="">
+    </button>
   </div>
-  <div>
-    -- years
-  </div>
-  <div>
-    -- months
-  </div>
-  <div>
-  -- days
+  <div class="result">
+    <div class="result-years">
+    <span class="number-result">--</span> years
+    </div>
+    <div class="result-months">
+    <span class="number-result">--</span> months
+    </div>
+    <div class="result-days">
+    <span class="number-result">--</span> days
+    </div>
   </div>
  
   <!-- <div class="attribution">
