@@ -36,7 +36,7 @@ input:focus{
     margin-right: 10%;
 }
 .for_btn{
-    background-color: black;
+    background-color: rgb(21, 97, 37);
     display: flex;
     justify-content: end;
     padding-right: 20%;
@@ -49,6 +49,10 @@ button{
     color: antiquewhite;
     background-color: blueviolet;
     border: none;
+    cursor: pointer;
+}
+button:hover:focus:active{
+    background-color: black;
 }
 
 .number-result{
