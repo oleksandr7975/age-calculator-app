@@ -23,15 +23,15 @@
   <div class="data_input">
     <div class="day-month-year">
       <label for="day-month-year"> DAY</label>
-      <input type="number-input" placeholder="DD" id="day" name="day" min="0">
+      <input type="number-input" placeholder="DD" id="day" name="day" min="0" maxlength="2" class="day">
     </div>
     <div class="day-month-year">
       <label for="month">MONTH</label>
-      <input type="number-input" placeholder="MM" id="month" name="month" min="0">
+      <input type="number-input" placeholder="MM" id="month" name="month" min="0" maxlength="2" class="month">
     </div>
     <div class="day-month-year">
       <label for="year">YEAR</label>
-      <input type="number-input" placeholder="YYYY" id="year" name="year" min="0">
+      <input type="number-input" placeholder="YYYY" id="year" name="year" maxlength="4" class="year">
     </div>
   </div>
 
@@ -41,14 +41,14 @@
     </button>
   </div>
   <div class="result">
-    <div class="result-years">
-    <span class="number-result">--</span> years
+    <div>
+    <span class="result-years">--</span> years
     </div>
-    <div class="result-months">
-    <span class="number-result">--</span> months
+    <div>
+    <span class="result-months">--</span> months
     </div>
-    <div class="result-days">
-    <span class="number-result">--</span> days
+    <div>
+    <span class="result-days">--</span> days
     </div>
   </div>
  
@@ -57,5 +57,7 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="/ageCalculator.js"></script>
 </body>
 </html>

@@ -14,6 +14,7 @@ input{
     padding-left: 15px;
     border-color: antiquewhite;
     border: none;
+    cursor: pointer;
 }
 input:focus{
     outline: none;
@@ -55,9 +56,12 @@ button:hover:focus:active{
     background-color: black;
 }
 
-.number-result{
-    color: rgb(99, 52, 143);
+.result-years,
+.result-months,
+.result-days{
+    color: blueviolet;
 }
+
 .result{
     background-color: brown;
     font-size: 5rem;
