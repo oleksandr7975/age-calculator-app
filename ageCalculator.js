@@ -9,11 +9,17 @@ function myTest(){
     let resultYear = yearNow-birthYear;
     let resultMonth = (monthNow+1)-birthMonth;
 
+
+
+
+    
+
     console.log(day);
     document.querySelector('.result-years').innerHTML = resultYear;
     document.querySelector('.result-months').innerHTML = resultMonth;
     document.querySelector('.result-days').innerHTML = resultDate;
-    
+
+   
 
 }
 document.querySelector('button').onclick = myTest;

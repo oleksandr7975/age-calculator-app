@@ -16,9 +16,14 @@ input{
     border: none;
     cursor: pointer;
 }
+
 input:focus{
     outline: none;
     border: 1px solid blueviolet;
+}
+
+input:invalid{
+    border: 1px solid red;
 }
 
 
