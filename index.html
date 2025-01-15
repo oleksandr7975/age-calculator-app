@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -19,27 +19,31 @@
 <body>
 
 <div class="all_content">
-
   <div class="data_input">
     <div class="day-month-year">
       <label for="day-month-year"> DAY</label>
-      <input type="number-input" placeholder="DD" id="day" name="day" min="0" maxlength="2" required minlength="2" class="day">
+      <input type="text" placeholder="DD" id="day" name="day" min="0" maxlength="2" required minlength="2" class="day">
+      <small class="error-message"></small>
     </div>
     <div class="day-month-year">
       <label for="month">MONTH</label>
-      <input type="number-input" placeholder="MM" id="month" name="month" min="0" maxlength="2" required minlength="2" class="month">
+      <input type="text" placeholder="MM" id="month" name="month" min="0" maxlength="2" required minlength="2" class="month">
+      <small class="error-message"></small>
     </div>
     <div class="day-month-year">
       <label for="year">YEAR</label>
       <input type="number-input" placeholder="YYYY" id="year" name="year" maxlength="4" required minlength="4" class="year">
+      <small class="error-message"></small>
     </div>
   </div>
 
   <div class="for_btn">
+    <div class="line"></div>
     <button>
-      <img src="/assets/images/icon-arrow.svg" alt="">
+      <img src="./assets/images/icon-arrow.svg" alt="icon-arrow">
     </button>
   </div>
+
   <div class="result">
     <div>
     <span class="result-years">--</span> years
@@ -58,6 +62,6 @@
   </div> -->
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-<script src="/ageCalculator.js"></script>
+<script src="./ageCalculator.js"></script>
 </body>
 </html>

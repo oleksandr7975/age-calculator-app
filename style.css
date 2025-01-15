@@ -1,20 +1,33 @@
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    box-sizing: border-box;
 }
 input, 
 label
 {
     display: block;
+    letter-spacing: 4px;
 }
+
 input{
+    margin-right: 50px;
     font-size: 32px;
     width: 120px;
     height: 60px;
     border-radius: 5px;
     padding-left: 15px;
-    border-color: antiquewhite;
-    border: none;
+    border: 1px solid;
+    border-color: hsl(0, 0%, 82%);
     cursor: pointer;
+    font-weight: 700;
 }
 
 input:focus{
@@ -22,7 +35,7 @@ input:focus{
     border: 1px solid blueviolet;
 }
 
-input:invalid{
+input:required:focus:invalid {
     border: 1px solid red;
 }
 
@@ -30,22 +43,36 @@ input:invalid{
 .data_input{
     display: flex;
     margin-top: 10%;
-    padding-left: 15%;
-    background-color: rgb(99, 93, 93);
+    padding-left: 75px;
     
 }
 .day-month-year{
     display: inline-block;
+    color: hsl(0, 0%, 65%);
+    
 }
 .all_content{
-    margin-left: 10%;
-    margin-right: 10%;
-}
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    border-end-end-radius: 25%;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 75px;
+    }
+
+
 .for_btn{
-    background-color: rgb(21, 97, 37);
+    position: relative;
+    width: 100%;
     display: flex;
-    justify-content: end;
-    padding-right: 20%;
+    justify-content: right;
+    padding-right: 75px;
+    
 }
 
 button{
@@ -56,6 +83,7 @@ button{
     background-color: blueviolet;
     border: none;
     cursor: pointer;
+    z-index: 1;
 }
 button:hover:focus:active{
     background-color: black;
@@ -68,8 +96,94 @@ button:hover:focus:active{
 }
 
 .result{
-    background-color: brown;
     font-size: 5rem;
-    padding-left: 15%;
+    padding-left: 75px;
+    font-weight: 800;
+    font-style: italic;
+    
 }
 
+.error-message{
+    color: red;
+    font-size: 12px;
+    visibility: hidden;
+    margin-top: 5px;
+    font-style: italic;
+}
+.error-message.visible{
+    visibility: visible;
+}
+.line {
+    width: calc(100% - 150px); /* Лінія займатиме всю ширину контейнера мінус відступи */
+    height: 2px; /* Висота лінії */
+    background-color: hsl(0, 0%, 65%);
+    border-radius: 1px; /* Легка округлість країв */
+    position: absolute;
+    top: 40%;
+    
+}
+
+@media (max-width: 375px) {
+    .line {
+        width: calc(100% - 70px);
+    }
+    .all_content {
+      position: relative;
+      width: calc(100vw - 20px); /* Повна ширина вікна браузера */
+      max-width: none; /* Забираємо обмеження максимальної ширини */
+      margin: 0; /* Прибираємо зовнішні відступи */
+      padding: 10; /* Прибираємо внутрішні відступи */
+      box-sizing: border-box; /* Враховуємо padding у ширині */
+      padding-right: 20px;
+      border-end-end-radius: 125px;
+    }
+  
+    body {
+      margin: 0; /* Прибираємо відступи */
+      padding: 0;
+      width: 100%; /* Гарантуємо, що body займає всю ширину */
+      overflow-x: hidden; /* Запобігаємо горизонтальному прокручуванню */
+    }
+  
+    .data_input {
+      padding: 0 10px; /* Додаємо відступи з боків */
+      justify-content: space-between; /* Вирівнюємо елементи рівномірно */
+      padding-left: 5px;
+      
+    }
+  
+    .result {
+        width: 100%; /* Вирівнюємо результати на всю ширину */
+        padding: 10px; /* Відступи всередині */
+        font-size: 3.5rem;
+        font-weight: 800;
+        font-style: italic;
+        text-align: left;
+        margin-bottom: 20px;
+        
+    }
+  
+    .for_btn {
+        display: flex;
+        justify-content: center; /* Центруємо кнопку по горизонталі */
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+  
+    input {
+      width: calc(100% - 20px); /* Інпут на всю ширину мінус padding */
+
+        
+        font-size: 20px;
+        width: 80px;
+        height: 50px;
+        font-weight: 700;
+        margin-right: 5px;
+        padding-left: 15px;
+    }
+    
+  }
+  
+  
